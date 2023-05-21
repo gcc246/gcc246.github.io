@@ -4,14 +4,74 @@
     <title> Weather</title>
 
     <script src= "main.js"></script>
-    <link rel="stylesheet" href="styles.css">
-
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<h1> testswtst </h1>
+    <div class="text-center">
+<h1> Camarillo Weather: </h1>
 
+<h2 id = "temperatureF">Temperature in Fahrenheit:  </h2>
+<button id="humidityButton"> Toggle me to Show Humidity</button>
+<h3 id = "humidLabel" style = "visibility: hidden;">Humidity: </h3>
+</div>
+<div class= "row">
+<div class = "col-6">
+    <div class="card text-center" id ="windGrad">
+        <div class="" id = "" style = "font-size:larger;">Wind</div>
+        <div class="card-body">
+            <h3 id ="windSpeed"></h3>
+        </div>
+        <div class="" id = "windDirection">Wind Direction: </div>
+        <div class="" id ="windDegree">Wind Degree: </div>
+        <div class="" id ="maxWind">Max Wind Speed: </div>
+        <div class="pb-1" id ="windGust">Gusts: </div>
+    </div>
+</div>
+
+<div class = "col-6">
+    <div class="card text-center" id ="astroGrad">
+        <div class="" id = "" style = "font-size:larger;">Astro</div>
+        <h2 class="card-body" id="uvIndex">
+            UV:
+        </h2>
+        <div class="" id = "sunset">Sunset: </div>
+        <div class="pb-5" id ="sunrise">Sunrise: </div>
+    </div>
+
+</div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+    <div class="card text-center" id ="nextDay">
+        <div class="pb-3" id = "" style = "font-size:larger;">Tomorrow</div>
+        <h2 id ="conditionTmr"></h2>
+        <div class="" id = "avgTempTmr">Average: </div>
+        <div class="" id ="maxTempTmr">Max Temp: </div>
+        <div class="" id ="minTempTmr">Min Temp: </div>
+        <div class="pb-2" id ="maxWindTmr">Max Wind Speed: </div>
+    </div>
+</div>
+<div class="col-6">
+    <div class="card text-center" id ="AQIgrad">
+        <div class="" id = "AQIHeader" style = "font-size:larger;">Air Quality</div>
+        <div class="card-body">
+            <h3 class="card-title" id =""></h3>
+            <h4 class="card-text" id =""></h4>
+            <h4 id ="AQICondition"></h4>
+        </div>
+        <div class="" id = "AQIUSIndex">US EPA Index: </div>
+        <div class="" id ="AQIGBIndex">GB Defra Index: </div>
+        <div class="pb-2" id ="avgHumid">Average Humidity: </div>
+    </div>
+    </div>
+</div>
 </body>
 
 
