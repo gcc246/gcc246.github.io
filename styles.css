@@ -2,3 +2,8 @@ h1{
     color:darkcyan; /*turns all h1 tags to color darkcyan */
 }
 
+.card{
+	border: 1px;
+	padding: 10px;
+	box-shadow: 15px 20px #e0dede;
+  }
