@@ -12,11 +12,28 @@
 
 <body>
 
+    <form id ="userInput">
+        <input id="locationInputForm" type="text" class="form-control text-center" placeholder="Location - Enter name or zipcode" value="">
+    </form>
+    <div class="row">
+
+        <div class="col-6 text-center" style ="margin:auto">
+
+    <button id="submitLocation" onclick="saveInput()">Enter</button>
+
+</div>
+    </div>
+
+    <div id = "weatherBody" style="visibility: hidden;">
+
+
     <div class="text-center"> <!-- main header -->
-<h1> Camarillo Weather: </h1>
+<h1 id="locationHeader"></h1>
 <h2 id = "temperatureF">Temperature in Fahrenheit:  </h2>
-<button id="humidityButton"> Toggle me to Show Humidity</button>
-<h3 id = "humidLabel" style = "visibility: hidden;">Humidity: </h3>
+
+
+
+
     </div>
 
 <div class= "row"> <!--first row: wind and astro-->
@@ -69,6 +86,7 @@
         <div class="pb-2" id ="avgHumid">Average Humidity: </div>
     </div>
     </div>
+</div>
 </div>
 </body>
 
