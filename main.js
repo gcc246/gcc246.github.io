@@ -10,6 +10,7 @@ async function retrieve () {
     const weatherData = await response.text();
     const weatherDataText = JSON.parse(weatherData)
     console.log(weatherDataText);
+    document.getElementById("locationHeader").textContent = weatherDataText.location.name + " Weather";
     // JSON object parsing to javascript object ^
     
     let temperature = document.getElementById("temperatureF");
@@ -72,10 +73,9 @@ cards.forEach((card) =>{
 
     }
 
-
+    //function that saves input from form
     const saveInput = () =>{
         locationInput = document.getElementById("locationInputForm").value;
-        document.getElementById("locationHeader").textContent = locationInput + " Weather";
         retrieve();
         document.getElementById("weatherBody").style.visibility = "visible";
       }
